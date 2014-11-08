@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Button
+        android:id="@+id/btnOn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_ON" />
+    
+                            <Button
+                            android:id="@+id/manuel_left"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/manuel_move"
+                            android:layout_marginRight="14dp"
+                            android:layout_toLeftOf="@+id/manuel_move"
+                            android:background="@drawable/left" />
+
+				        <Button
+				            android:id="@+id/manuel_back"
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:layout_alignLeft="@+id/manuel_move"
+				            android:layout_below="@+id/manuel_right"
+				            android:layout_marginTop="14dp"
+				            android:background="@drawable/down"
+				            android:gravity="bottom" />
+
+				        <Button
+				            android:id="@+id/manuel_stop"
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:layout_centerHorizontal="true"
+				            android:layout_centerVertical="true"
+				            android:background="@drawable/stop" />
+
+				        <Button
+				            android:id="@+id/manuel_move"
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:layout_above="@+id/manuel_right"
+				            android:layout_alignLeft="@+id/manuel_stop"
+				            android:layout_marginBottom="14dp"
+				            android:background="@drawable/up"
+				            android:gravity="top"
+                                />
+
+				        <Button
+				            android:id="@+id/manuel_right"
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:layout_centerVertical="true"
+				            android:layout_marginLeft="14dp"
+				            android:layout_toRightOf="@+id/manuel_stop"
+				            android:background="@drawable/right"
+				            android:focusableInTouchMode="false"
+				            android:gravity="right" />
+
+				        <Button
+				            android:id="@+id/btnOff"
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:layout_alignLeft="@+id/manuel_right"
+				            android:layout_alignParentTop="true"
+				            android:text="@string/btn_OFF" />
+
+</RelativeLayout>
